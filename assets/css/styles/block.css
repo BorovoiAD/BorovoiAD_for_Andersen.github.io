@@ -1,0 +1,30 @@
+.central {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.central > *,
+.buttonEnd > button {
+  height: 50px;
+  margin: 5px;
+}
+.entryField,
+.result {
+  flex-direction: column;
+}
+.button_choice,
+.buttonEnd > button,
+.receivingValue {
+  font-size: 1.25rem;
+}
+.button_choice,
+.buttonEnd > button {
+  width: 150px;
+}
+.notShow {
+  display: none;
+}
+.showFinalText {
+  font-size: 1.4rem;
+}
