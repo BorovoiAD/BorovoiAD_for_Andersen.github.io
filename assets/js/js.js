@@ -9,6 +9,7 @@ document.querySelector('.choiceArray').onclick = choiceIsMadeArray;
 document.querySelector('.showResult').onclick = showYourResult;
 document.querySelector('.repeat').onclick = showChoice;
 document.querySelector('.stopAll').onclick = hideEnd;
+document.querySelector('.choiceBacket').onclick = resultChoiceBacket;
 
 function choiceIsMade7() {
 	showEntryField();
@@ -37,6 +38,9 @@ function showChoice() {
   }
   else if(variableReceivingValue.classList.contains('yourChoiceArray')) {
   	variableReceivingValue.classList.remove('yourChoiceArray');
+  }
+  if(document.getElementById('finalText').classList.contains('ChoiceBacket')) {
+  	document.getElementById('finalText').classList.remove('ChoiceBacket');
   }
   document.getElementById('valueProcess').value = '';
   document.getElementById('finalText').textContent = '';
@@ -98,6 +102,13 @@ function resultChoiceArray(checkValue) {
 	}
 	finalString = finalString.slice(0, -1);
 	document.getElementById('finalText').textContent = finalString;
+}
+
+function resultChoiceBacket() {
+	variableChoice.classList.add('notShow');
+	variableResult.classList.remove('notShow');
+	document.getElementById('finalText').textContent = '[((())()(())]] - скобочная последовательность не является правильной. Стоит либо удалить первую слева полукруглую скобку либо добавить к ней закрывающую, так же стоит либо удалить последнюю правую квадратную скобку либо и к ней добавить закрывающую.'
+	document.getElementById('finalText').classList.add('ChoiceBacket');
 }
 
 function checkResult(check) {

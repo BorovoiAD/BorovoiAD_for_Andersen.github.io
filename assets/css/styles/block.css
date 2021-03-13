@@ -20,11 +20,15 @@
 }
 .button_choice,
 .buttonEnd > button {
-  width: 150px;
+  width: 200px;
 }
 .notShow {
   display: none;
 }
 .showFinalText {
   font-size: 1.4rem;
+  max-width: 500px;
+}
+.ChoiceBacket {
+  height: 160px;
 }
