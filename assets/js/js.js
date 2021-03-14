@@ -107,7 +107,7 @@ function resultChoiceArray(checkValue) {
 function resultChoiceBacket() {
 	variableChoice.classList.add('notShow');
 	variableResult.classList.remove('notShow');
-	document.getElementById('finalText').textContent = '[((())()(())]] - скобочная последовательность не является правильной. Стоит либо удалить первую слева полукруглую скобку либо добавить к ней закрывающую, так же стоит либо удалить последнюю правую квадратную скобку либо и ней добавить открывающую.'
+	document.getElementById('finalText').textContent = '[((())()(())]] - скобочная последовательность не является правильной. Стоит либо удалить первую слева полукруглую скобку либо добавить к ней закрывающую, так же стоит либо удалить последнюю правую квадратную скобку либо к ней добавить открывающую.'
 	document.getElementById('finalText').classList.add('ChoiceBacket');
 }
 
